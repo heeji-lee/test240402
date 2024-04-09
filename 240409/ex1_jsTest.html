@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>오늘 점심은 뭐 먹지?</h1>")
+        document.write("<h2>오늘 메뉴는 수제 버거</h2>")
+        document.write(1+1)
+        document.write("<br>")
+        document.write("1+1")
+    </script>
+    <script>
+        // if (window.confirm("Do you really want to leave?")) {
+        //     alert("오늘 국밥 먹음!!")
+        // }
+    </script>
+    <h1>1+1</h1>
+    <input type="button" value="alertTest" onclick="
+        alert('alertTest 중입니다.')
+        ">
+    <input type="button" value="confirmTest" onclick="
+        if (window.confirm('Do you really want to leave?')) {
+            alert('오늘 국밥 먹음!!')
+        }
+    ">
+    <input type="text" id="testInput">
+    <input type="button" value="clear" onclick="
+    var test = document.querySelector('#testInput')
+    test.value=''">
+
+    <input type="text" id="testInput2">
+    <input type="button" value="clear" onclick="clearInputs()">
+    <script>
+        function clearInputs() {
+            document.getElementById("testInput2").value="";
+        }
+    </script>
+    
+</body>
+
+</html>
