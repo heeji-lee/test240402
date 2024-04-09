@@ -63,7 +63,7 @@ img {
 grid라는 아이디 부분을 grid -> block
 block 공간 침투 불가능. 하나의 요소는 한 행만 차지를 합니다.
 결과, 세로 방향으로 하나의 요소씩만 차지한다. */
-@media(max-width :1200px){
+@media(max-width :1400px){
   #grid {
       display: block;
   }
