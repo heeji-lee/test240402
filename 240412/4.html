@@ -12,44 +12,6 @@
   nightDayHandler(this);
   ">
   
-  <script>
-    function BodySetColor(color) {
-      document.querySelector('body').style.color = color;
-    }
-
-    function BodySetBackgroudColor(color) {
-      document.querySelector('body').style.backgroundColor = color;
-    }
-
-    function LinksSetColor(color) {
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while (i < alist.length) {
-        alist[i].style.color = color;
-        console.log(alist[i]);
-        i = i + 1;
-      }
-    }
-
-    function nightDayHandler(self) {
-      if (self.value === 'night') {
-        BodySetBackgroudColor('black');
-        BodySetColor('white');
-        self.value = 'day'
-
-        LinksSetColor('powderblue');
-
-      } else {
-        BodySetBackgroudColor('white');
-        BodySetColor('black');
-        self.value = 'night'
-
-        LinksSetColor('blue');
-
-      }
-    }
-  </script>
-
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
     <ol>
@@ -64,32 +26,32 @@
       아까 연습용으로 사용했던 요소로 교체 -->
       <div id="grid_pictures">
         <div class="picture_container">NAVIGATION
-          <img src="lavar1.jpg" >
+          <img src="coding.jpg">
         </div>
         <div class="picture_container">
           <div>ARTICLE</div>
-          <img src="coding.jpg" >
+          <img src="coding.jpg">
         </div>
         <div class="picture_container">이상용
-          <img src="coding.jpg" >
+          <img src="coding.jpg">
         </div>
         <div class="picture_container">NAVIGATION
-          <img src="coding.jpg" >
+          <img src="coding.jpg">
         </div>
         <div class="picture_container">ARTICLE
           <img src="coding.jpg">
         </div>
         <div class="picture_container">이상용
-          <img src="coding.jpg" >
+          <img src="coding.jpg">
         </div>
         <div class="picture_container">NAVIGATION
-          <img src="coding.jpg" >
+          <img src="coding.jpg">
         </div>
         <div class="picture_container">ARTICLE
-          <img src="coding.jpg" >
+          <img src="coding.jpg">
         </div>
         <div class="picture_container">이상용
-          <img src="coding.jpg" >
+          <img src="coding.jpg">
         </div>
       </div>
     </div>
