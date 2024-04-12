@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Array </h1>
+    <h2>Syntax - set, 배열 선언</h2>
+    <script>
+        var coworkers = ["egoing", "leezche"];
+    </script>
+    <h2>get - 배열 값 가져오기</h2>
+    <script>
+        document.write("<h2>coworkers[0]</h2>");
+        document.write(coworkers[0]);
+        document.write("<h2>coworkers[1]</h2>");
+        document.write(coworkers[1]);
+    </script>
+    <!-- 배열은 단독으로 사용하기보다, 반복문과 같이 자주 사용합니다.
+    반복자 패턴 -->
+
+    <h2>add</h2>
+    <script>
+        coworkers.push('국밥');
+        coworkers.push('돈까스');
+    </script>
+
+    <h2>count</h2>
+    <script>
+        document.write(coworkers.length);
+    </script>
+
+    <script>
+        document.write("<h2>coworkers[2]</h2>");
+        document.write(coworkers[2]);
+        document.write("<h2>coworkers[3]</h2>");
+        document.write(coworkers[3]);
+    </script>
+
+    <h2>Coworkers3</h2>
+    <ul>
+        <!-- '<li>' + coworkers[i] + '</li>'
+        여기에서 문자열 +(사칙연산 아님, 연결 연산자)
+        문자열 + 값 = 문자열
+        문자열 + 문자열 = 문자열 -->
+        <script>
+            var coworkers = ["국밥", "돈까스", "햄버거", "마라탕"];
+            var i = 0;
+            while (i < coworkers.length) {
+                document.write('<li>' + coworkers[i] + '</li>');
+                i = i + 1;
+            }
+        </script>
+    </ul>
+
+    <script>
+        var foods = ["마라탕","햄버거","초밥"];
+        for(var i=0;i<foods.length;i++){
+            document.write(foods[i]+'<br>');
+        }
+    </script>
+</body>
+
+</html>
